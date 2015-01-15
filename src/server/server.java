@@ -11,8 +11,11 @@ try
 {
 	watekSerwera = new ServerSocket(port);
 	watekSerwera.setSoTimeout(1000000);
-}catch(IOException e) {
-e.printStackTrace(); }
+}
+catch(IOException e) 
+{
+e.printStackTrace(); 
+}
 while(true)
 {
 System.out.println("Oczekiwanie na klienta na porcie " + watekSerwera.getLocalPort() + "...");
